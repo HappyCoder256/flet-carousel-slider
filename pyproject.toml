@@ -1,0 +1,36 @@
+[project]
+name = "flet-carousel-slider"
+version = "24.11.0"
+description = "FletCarouselSlider control"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "HappyCoders256", email = "kimjovanne@gmail.com" }
+]
+dependencies = [
+    "flet>=0.27.5",
+]
+
+[project.urls]
+Homepage = "https://mydomain.dev"
+Documentation = "https://github.com/MyGithubAccount/flet-carousel-slider"
+Repository = "https://github.com/MyGithubAccount/flet-carousel-slider"
+Issues = "https://github.com/MyGithubAccount/flet-carousel-slider/issues"
+
+[tool.setuptools.package-data]
+"flutter.flet_carousel_slider" = ["**/*"]
+
+[tool.uv]
+dev-dependencies = [
+    "flet[all]==0.27.5",
+]
+
+[tool.poetry.group.dev.dependencies]
+flet = {extras = ["all"], version = "0.27.5"}
+
+[tool.setuptools]
+license-files = []
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
